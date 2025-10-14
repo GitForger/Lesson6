@@ -8,7 +8,7 @@ driver = webdriver.Chrome()
 try:
     driver.get("https://bonigarcia.dev/selenium-webdriver-java/loading-images.html")
     
-    wait = WebDriverWait(driver, 15)
+    wait = WebDriverWait(driver, 17)
     
     # Ждем пока 4-я картинка (с id="landscape") станет видимой
     fourth_image = wait.until(
@@ -22,7 +22,6 @@ try:
     third_image_src = images[2].get_attribute("src")
     print(f"SRC третьей картинки: {third_image_src}")
     
-    wait = WebDriverWait(driver, 15)
 
 finally:
     driver.quit()
