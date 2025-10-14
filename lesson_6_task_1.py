@@ -27,6 +27,6 @@ try:
     banner_text = success_element.text
     print(f"Текст из плашки: '{banner_text}'")
 
-    wait = WebDriverWait(driver, 5)
 finally:
+
     driver.quit()
