@@ -36,6 +36,6 @@ try:
     print(f"Текст кнопки: '{button_text}'")
 
 finally:
-    time.sleep(5)
     driver.quit()
     print("Браузер закрыт")
+
