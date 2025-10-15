@@ -38,4 +38,3 @@ try:
 finally:
     driver.quit()
     print("Браузер закрыт")
-
